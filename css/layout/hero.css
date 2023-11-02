@@ -1,3 +1,7 @@
+.header-nav-container {
+    display: none;
+}
+
 .header-container {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
         url(../../images/hero/mobile.png);
@@ -16,6 +20,14 @@
     position: absolute;
     top: 48px;
     right: 31px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.hero-mane-title-deskr {
+    padding-bottom: 183px;
+    padding-top: 208px;
 }
 
 .hero-title-descr::before {
@@ -40,7 +52,7 @@
     line-height: normal;
     letter-spacing: 1.1px;
     text-transform: uppercase;
-    padding-top: 208px;
+
     padding-left: 80px;
     margin-bottom: 20px;
 }
@@ -65,7 +77,7 @@
     line-height: 26px;
     /* 162.5% */
     letter-spacing: 0.32px;
-    padding-bottom: 181px;
+
     width: 306px;
 }
 
@@ -75,4 +87,74 @@
 
 .hero-button-svg {
     fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+            url(../../images/hero/laptop.png);
+        background-repeat: no-repeat;
+        background-size: 570px 680px;
+        background-position-x: 159px;
+
+    }
+
+    .hero-mane-title-deskr {
+        padding-bottom: 245px;
+        padding-top: 192px;
+        margin-left: 240px;
+    }
+
+    .hero-title-description {
+        width: 355px;
+    }
+
+    .hero-button-modal {
+        display: none;
+    }
+
+    .header-nav-container {
+        display: flex;
+    }
+
+    .nav-header {
+        display: flex;
+        padding-top: 52px;
+        padding-left: 138px;
+        margin-right: 24px;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 23px;
+    }
+
+    .header-nav-text {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.2px;
+    }
+
+    .header-nav-btn {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+        background-color: transparent;
+        padding: 12px 23px;
+        border-radius: 25px;
+        border: 1px solid #FF6C00;
+        min-width: 160px;
+        height: 40px;
+        margin-top: 40px;
+    }
+
 }
